@@ -1,19 +1,43 @@
 # DevelopsToday Country API
 
-## Endpoints
+This is a simple REST API built with [Express.js](https://expressjs.com/) to provide information about countries.
 
-### 1. Get Available Countries
+## Getting Started
 
-**GET** `/api/countries`
+### Installation
 
-- Returns a list of available countries.
+1. Clone the repository:
 
-### 2. Get Country Info by Code
+    ```bash
+    git clone https://github.com/OrgFranG/DevelopsToday-Country-API.git
+    cd country-api
+    ```
 
-**GET** `/api/country-info/:code`
+2. Install the dependencies:
 
-- Returns detailed information about a specific country.
-- Data includes:
-  - Border countries
-  - Population data (historical)
-  - Country flag URL
+    ```bash
+    npm install
+    ```
+
+### Environment Variables
+
+Create a `.env` file in the root of the project and define the following variable:
+
+```bash
+PORT=<your_port>
+```
+
+### Running the API
+
+To run the API in development mode:
+
+  ```bash
+    npm run dev
+  ```
+
+To run the API in production mode:
+
+  ```bash
+    npm start
+  ```
+  
